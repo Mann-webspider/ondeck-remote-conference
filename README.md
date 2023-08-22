@@ -1,6 +1,6 @@
 # OnDeck Remote Conference
 
-![Logo](logo.png)
+![Logo](./Assets/Logo.svg)
 
 Welcome to the OnDeck Remote Conference project repository! This repository hosts the code and resources for creating a virtual conference platform called "OnDeck Remote Conference." This platform aims to provide an immersive and engaging experience for remote conferences, enabling attendees to participate, network, and learn from the comfort of their own spaces.
 
@@ -47,4 +47,4 @@ The OnDeck Remote Conference project is designed to address the challenges of ho
 
 1. Clone this repository to your local machine using:
    ```bash
-   git clone https://github.com/yourusername/ondeck-remote-conference.git
+   git clone https://github.com/Mann-webspider/ondeck-remote-conference.git
