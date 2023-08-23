@@ -30,8 +30,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            height: 100vh;
-            position: relative;
+            height: fit-content;
+            /* position: relative; */
         }
         .navbar{
             display: flex;
@@ -80,7 +80,7 @@
             width: fit-content;
         }
         .left h1{
-            width: 22ch;
+            width: 40rem;
             font-size: 3.5rem;
         }
         .left h1 span{
@@ -88,7 +88,7 @@
         }
         .left p{
             color: var(--gray);
-            width: 70ch;
+            width: 35rem;
         }
         .rating{
             display: flex;
@@ -163,12 +163,147 @@
         #drop-down ul li img{
             margin: 0 6px;           
         }
+
+        .mobile-routes{
+            display: none;
+        }
+        #hamburg{
+            appearance: none;
+            background-image: url("./Assets/Menu.svg");
+            width: 25px;
+            height: 25px;
+            background-repeat: no-repeat;
+            z-index: 7;
+            position: relative;
+        }
+
+        #mobile-menu{
+            width: 15rem;
+            height: 100vh;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: -800px;
+            padding: 0;
+            margin: 0;
+        }
+        #mobile-menu ul{
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            /* justify-content: space-around; */
+            margin: 1rem;
+            padding: 0;
+        }
+        #mobile-menu ul li{
+            text-decoration: none;
+            list-style: none;
+            color: var(--gray);
+            margin: 30px 0;
+            font-size: 1.2rem;
+        }
+        #hamburg:checked{
+            background-image: url("./Assets/Close.svg")
+        }
+        #hamburg:checked + #mobile-menu{
+            right: 0;
+            
+        }
+        @media (max-width:380px) {
+            .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .left{
+            width: 100%;
+        }
+        .left h1{
+            width: 100%;
+            font-size: 2.5rem;
+        }
+        .left p{
+            width: 100%;
+        }
+        .right{
+            width: 100%;
+            display: none;
+        }
+        
+        .logo-cloud ul{
+            margin: 0;
+            padding: 0;
+        }
+        .logo-cloud ul li img{
+            width: 8rem;
+        }
+        .list-cloud ul li{
+            margin: 1rem;
+        }
+        .list-cloud ul{
+            
+            flex-wrap: wrap;
+        }
+        .routes{
+            display: none;
+        }
+        .btn{
+            display: none;
+        }
+        .mobile-routes{
+            display: block;
+        }
+        .mobile-menu{
+            display: block;
+        }
+        .navbar{
+            justify-content: space-between;
+        }
+    }
     </style>
 </head>
 <body class="hero">
     <div class="navbar">
         <div class="logo">
         <img src="./Assets/Logo.svg" alt="Logo">
+        </div>
+        <div class="mobile-routes">
+            <input type="checkbox" name="check" id="hamburg">
+            <div id="mobile-menu">
+                <ul>
+                    <li id="menu">Products
+                        <div id="drop-down">
+                            <ul>
+                                <li>
+                                    <img src="./Assets/Spense_Icon.svg" alt=""> 
+                                    <div>
+                                        <h4>Spense</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./Assets/Fiber_Icon.svg" alt="">
+                                    <div>
+                                        <h4> Fiber landing Page</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./Assets/Gradie_Icon.svg" alt="">
+                                    <div>
+                                        <h4> Graadie Sign up Page</h4>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Challenges</li>
+                    <li>Resource</li>
+                    <li>Other Links</li>
+                </ul>
+            </div>
         </div>
         <div class="routes">
             <ul>

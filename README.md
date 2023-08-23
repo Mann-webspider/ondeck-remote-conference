@@ -1,6 +1,6 @@
 # OnDeck Remote Conference
 
-![Logo](./Assets/Logo.svg)
+![Logo](./Design/Landing%20Page%20ÔÇö%20Desktop.png)
 
 Welcome to the OnDeck Remote Conference project repository! This repository hosts the code and resources for creating a virtual conference platform called "OnDeck Remote Conference." This platform aims to provide an immersive and engaging experience for remote conferences, enabling attendees to participate, network, and learn from the comfort of their own spaces.
 
